@@ -22,7 +22,7 @@ export class AppComponent  {
       this.mono = data.gfMoNo;
       
   }
-  searchValue:string = '';
+  searchValue:string = null;
   clearTextBox()
   {
        this.searchValue =  ' ';
