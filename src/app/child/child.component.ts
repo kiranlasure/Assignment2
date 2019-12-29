@@ -1,4 +1,4 @@
-import { Component, OnInit,EventEmitter,Output } from '@angular/core';
+ import { Component, OnInit,EventEmitter,Output } from '@angular/core';
 import { EmployeeService } from '../employee.service';
 
 
@@ -22,4 +22,4 @@ export class ChildComponent implements OnInit {
      this.inputEvent.emit(val);
     
   }
-}
+} 
