@@ -20,6 +20,6 @@ export class AppComponent  {
       this.gmail=data.Mail;
       this.gfname=data.gfName;
       this.mono = data.gfMoNo;
-      console.log(this.mono);
+      
   }
 }
