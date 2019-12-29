@@ -1,0 +1,20 @@
+
+
+<form>
+Enter Id:<input [(ngModel)] ="id" name="id" type="text">
+<br><br>
+EnTer Name:<input [(ngModel)]="name1" name="name" type="text">
+<br><br>
+Enter Your Phone No:<input [(ngModel)] ="yMo_No" name="mono1" type="Number">
+<br><br>
+Enter your Mail:<input [(ngModel)] ="gmail" name="gm" type="text">
+<br><br>
+Enter Your GF Name<input [(ngModel)]="gfname" name="nm" type="text">
+<br><br>
+Enter Your GF Mo_No:<input [(ngModel)] ="mono" name ="mobile" type="number">
+<br><br>
+<button>Add</button><button class="btnsave">Save</button>
+</form>
+<br><br>
+<app-child (inputEvent)="getDetails($event)"></app-child>
+
