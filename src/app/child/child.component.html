@@ -5,12 +5,17 @@
   gfName:string,
   gfMoNo:number -->
 
-  <div fxLayout ="row" *ngFor="let emp of employees">
+  <div fxLayout ="row" fxLayout.xs="column" *ngFor="let emp of employees">
     <div fxFlex="16">{{emp.Id}}</div>
     <div fxFlex="16">{{emp.Name}}</div>
     <div fxFlex="16">{{emp.Mo_No}}</div>
     <div fxFlex="16">{{emp.Mail}}</div>
     <div fxFlex="16">{{emp.gfName}}</div>
     <div fxFlex="16">{{emp.gfMoNo}}</div>
-    <div fxFlex="16"><button>Add</button></div>
+    <div fxFlex="16"><button (click) = "add(emp)">Add</button></div>
   </div>
+  <button (click) = "onCreate()">Create</button>
+
+  <h1>HIII</h1>
+
+  <p>fggggdsgsssssssssssssssssssssfg</p>

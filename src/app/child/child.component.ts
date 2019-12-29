@@ -19,7 +19,11 @@ export class ChildComponent implements OnInit {
   }
 
   add(val){
-     this.inputEvent.emit(val);
-    
+    //  this.inputEvent.emit(val);
+    console.log(val);
+  }
+  onCreate()
+  {
+    alert("You click me");
   }
 } 
