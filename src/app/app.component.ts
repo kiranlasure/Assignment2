@@ -22,4 +22,9 @@ export class AppComponent  {
       this.mono = data.gfMoNo;
       
   }
+  searchValue:string = '';
+  clearTextBox()
+  {
+       this.searchValue =  ' ';
+  }
 }

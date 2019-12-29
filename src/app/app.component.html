@@ -1,19 +1,20 @@
 
 
 <form>
-Enter Id:<input [(ngModel)] ="id" name="id" type="text">
+Enter Id:<input [(ngModel)] ="id" name="id" type="text" [value]="searchValue">
 <br><br>
-EnTer Name:<input [(ngModel)]="name1" name="name" type="text">
+EnTer Name:<input [(ngModel)]="name1" name="name" type="text" [value]="searchValue">
 <br><br>
-Enter Your Phone No:<input [(ngModel)] ="yMo_No" name="mono1" type="Number">
+Enter Your Phone No:<input [(ngModel)] ="yMo_No" name="mono1" type="Number" [value]="searchValue">
 <br><br>
-Enter your Mail:<input [(ngModel)] ="gmail" name="gm" type="text">
+Enter your Mail:<input [(ngModel)] ="gmail" name="gm" type="text" [value]="searchValue">
 <br><br>
-Enter Your GF Name<input [(ngModel)]="gfname" name="nm" type="text">
+Enter Your GF Name<input [(ngModel)]="gfname" name="nm" type="text" [value]="searchValue">
 <br><br>
-Enter Your GF Mo_No:<input [(ngModel)] ="mono" name ="mobile" type="number">
+Enter Your GF Mo_No:<input [(ngModel)] ="mono" name ="mobile" type="number" [value]="searchValue">
 <br><br>
 <button>Add</button><button class="btnsave">Save</button>
+<button (click)="clearTextBox()">clear</button>
 </form>
 <br><br>
 <app-child (inputEvent)="getDetails($event)"></app-child>
